@@ -192,6 +192,14 @@ input, select, textarea {
 		margin-bottom: -5px;
 	}
 
+	#two {
+		color: white;
+	}
+
+	#two h2 {
+		color: white !important;
+	}
+
 @media screen and (max-width: 400px) {
 	h1 {
 		font-size: 5em;
@@ -207,10 +215,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #5e42a6, #ffe500);
+				background-image: -webkit-linear-gradient(to right, #5e42a6, #ffe500);
+				background-image: -ms-linear-gradient(to right, #5e42a6, #ffe500);
+				background-image: linear-gradient(to right, #5e42a6, #ffe500);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2266,6 +2274,40 @@ input, select, textarea {
 					top: 0;
 				}
 
+				.shareStepsright {
+					overflow: visible !important;
+				}
+
+				.shareStepsleft {
+					margin-top: 0 !important;
+				}
+
+		}
+
+		.ShareSteps {
+			width: 100%;
+		}
+
+		.shareStepsleft {
+			width: 400px;
+			float: left;
+			margin-top: 6em;
+		}
+
+		.shareStepsright {
+			overflow: hidden;
+		}
+
+
+
+		#receivesteps {
+			background-color: white;
+			color: black;
+
+		}
+
+		#receivesteps h2 {
+			color: white;
 		}
 
 /* Form */
@@ -2492,7 +2534,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b74e91;
+			color: #ffe500;
 			content: '\f00c';
 		}
 
@@ -3044,7 +3086,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+		/* min-height: 17.5em; */
 	}
 
 		body.is-ie .spotlights > section {
@@ -3086,7 +3128,7 @@ input, select, textarea {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
-			display: flex;
+			display: inline-block;
 			-moz-flex-direction: column;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
@@ -3095,7 +3137,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 150em;
 			-ms-flex: 1;
 		}
 
@@ -3136,7 +3178,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
-				padding: 4em 4em 2em 4em ;
+				padding: 0.5em 0.5em 0.5em 3em ;
 			}
 
 		}
@@ -3174,7 +3216,7 @@ input, select, textarea {
 			}
 
 			.spotlights > section > .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 2em 1em 2em 1em ;
 			}
 
 		}
@@ -3813,9 +3855,9 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #5e42a6, #ffe500);
+				background-image: -webkit-linear-gradient(to right, #5e42a6, #ffe500);
+				background-image: -ms-linear-gradient(to right, #5e42a6, #ffe500);
     		background-image: linear-gradient(to right, #7f7d0e, #fedf00);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
@@ -3905,7 +3947,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #ffe500;
 						}
 
 		}
