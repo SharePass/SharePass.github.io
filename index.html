@@ -29,16 +29,24 @@
 		<meta property="twitter:image" content="https://sharepass.github.io/images/SocialShare.png">
 		<meta name="twitter:site" content="@SharePass_app">
 		<!-- Google Analytics -->
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163108192-2"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163108192-2"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163108192-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  gtag('config', 'UA-163108192-2');
+		  gtag('config', 'UA-163108192-1');
+		</script>
+		<script>
+		/**
+		* Function that captures a click on an outbound link in Analytics.
+		*/
+		var captureOutboundLink = function(url) {
+		   ga('send', 'event', 'outbound', 'click', url, {
+		     'transport': 'beacon',
+		     'hitCallback': function(){document.location = url;}
+		   });
+		}
 		</script>
 	</head>
 	<body class="is-preload">
@@ -67,8 +75,8 @@
 							<h1>SharePass</h1>
 							<p>Share your accounts without giving your passwords away!</p>
 							<ul class="actions">
-								<li><a href="https://chrome.google.com/webstore/detail/sharepass/ogobpofhpaediomejphdlbljncngeggl" target="blank" class="button scrolly" id="install">Free on Chrome</a></li>
-							</ul>
+								<li><a href="https://chrome.google.com/webstore/detail/sharepass/ogobpofhpaediomejphdlbljncngeggl" onclick="captureOutboundLink("https://chrome.google.com/webstore/detail/sharepass/ogobpofhpaediomejphdlbljncngeggl"); return false;" target="blank" class="button scrolly" id="install">Free on Chrome</a></li>
+							</ul>						
 						</div>
 					</section>
 
