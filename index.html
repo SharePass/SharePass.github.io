@@ -53,12 +53,29 @@
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
+						<br><br><br><br>
 						<ul>
 							<li><a href="#intro">SharePass</a></li>
 							<li><a href="#one">Overview</a></li>
 							<li><a href="#two">User Guide</a></li>
 							<li><a href="#three">Privacy Policy</a></li>
-							<!-- <li><a href="#four">Terms of Service</a></li> -->
+							<li>
+								<form  action="" method="post">
+								<select id='language' class="languageOptions">
+										<!-- <option value='0'>Language</option> -->
+										<option value='en'>English (Default)</option>
+										<option value='bd'>বাংলা</option>
+										<option value='nl'>Nederlands</option>
+										<option value='hi'>हिन्दी</option>
+										<option value='es'>Español</option>
+										<option value='th'>ไทย</option>
+										<option value='fr'>Français</option>
+										<option value='pt'>Português </option>
+								</select>
+								</form>
+								<br>
+							</li>
+
 						</ul>
 					</nav>
 				</div>
@@ -67,13 +84,13 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<div>
-					<b style='color:black; background-color:lightgreen; margin-left:5px'> SharePass Operational Status: We are back online! </b><br><b style='color:black; margin-left:5px'> To reconnect, go to 'Settings' and click the 'Refresh' button in the top left corner, or restart your browser.</b>
+					<b style='color:black; background-color:lightgreen; margin-left:5px'> SharePass Operational Status: Online </b><b style='color:black; margin-left:5px'>To reconnect: Go to 'Settings' and click 'Refresh' in the top left corner or restart your browser.</b>
 				</div>
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>SharePass</h1>
-							<p>Share your accounts without giving your passwords away!</p>
+							<p id="subtitle">Share your accounts without giving your passwords away!</p>
 							<ul class="actions">
 								<li><a href="https://chrome.google.com/webstore/detail/sharepass/ogobpofhpaediomejphdlbljncngeggl" onclick="captureOutboundLink('https://chrome.google.com/webstore/detail/sharepass/ogobpofhpaediomejphdlbljncngeggl');" target="blank" class="button scrolly" id="install">Free on Chrome</a></li>
 							</ul>
@@ -116,8 +133,8 @@
 					<section>
 						<div class="content inner ShareSteps">
 							<div class="shareStepsleft">
-								<h2>Share Steps</h2>
-								<p>1. Sign in to an account you want to share <br><br> 2. Click on a friend or type in a new username <br><br> 3. Choose a duration from 4h, 1d, 7d or 2w <br><br> 4. Click SharePass! </p>
+								<h2 id="sharingTitle">Share Steps</h2>
+								<p id="sharingSteps">1. Sign in to an account you want to share <br><br> 2. Click on a friend or type in a new username <br><br> 3. Choose a duration from 4h, 1d, 7d or 2w <br><br> 4. Click SharePass! </p>
 							</div>
 							<div class="shareStepsright">
 								<img src="images/SPv2 Website - Share Steps.png" width="100%" alt="Share" >
@@ -128,8 +145,8 @@
 					<section>
 						<div class="content inner ShareSteps">
 							<div class="shareStepsleft">
-								<h2>Receive Steps</h2>
-								<p>1. Click on the tick to accept an account <br><br> 2. Click the account to Sign In! </p>
+								<h2 id="receiveTitle">Receive Steps</h2>
+								<p id="receiveSteps">1. Click on the tick to accept an account <br><br> 2. Click the account to Sign In! </p>
 							</div>
 							<div class="shareStepsright">
 								<img src="images/SPv2 Website - Receive Steps.png" width="100%" alt="" />

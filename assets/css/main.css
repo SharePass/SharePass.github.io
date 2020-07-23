@@ -172,6 +172,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 1.3em 0;
+		padding-right: 1px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -198,6 +199,13 @@ input, select, textarea {
 
 	#two h2 {
 		color: white !important;
+	}
+
+	#language {
+		color: #b5b5b5;
+		text-align: right;
+		text-align-last: right;
+		background-color: #040404;
 	}
 
 @media screen and (max-width: 400px) {
@@ -2446,7 +2454,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #312450;
+			background: #030005;
 		}
 
 		select:focus::-ms-value {
